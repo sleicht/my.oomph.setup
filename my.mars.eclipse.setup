@@ -67,7 +67,7 @@
   <setupTask
       xsi:type="setup:LinkLocationTask"
       id="bsiag"
-      path="../../../links/bsiag"
+      path="${installation.location|uri}/links/bsiag"
       name=""/>
   <version name="latest"
       label="Latest (Mars)"
