@@ -57,6 +57,11 @@
   <setupTask
       xsi:type="setup:ResourceCopyTask"
       id="Fenix Autostart"
+      sourceURL="https://tools.bsiag.com/products/updatesite/eclipse-4.4-scout-5.1/eclipse/links/bsiag/eclipse/plugins/com.bsiag.fenix_2.5.1.20140430-1513.jar"
+      targetURL="${installation.location|uri}/links/bsiag/eclipse/plugins/com.bsiag.fenix_2.5.1.20140430-1513.jar"/>
+  <setupTask
+      xsi:type="setup:ResourceCopyTask"
+      id="Fenix Autostart"
       sourceURL="https://tools.bsiag.com/products/updatesite/eclipse-4.4-scout-5.1/eclipse/links/bsiag/eclipse/plugins/com.bsiag.fenix.autostart_2.4.0.20131223-1006.jar"
       targetURL="${installation.location|uri}/links/bsiag/eclipse/plugins/com.bsiag.fenix.autostart_2.4.0.20131223-1006.jar"/>
   <setupTask
