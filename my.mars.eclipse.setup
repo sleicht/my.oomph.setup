@@ -78,8 +78,6 @@
       <requirement
           name="AnyEditTools.feature.group"/>
       <requirement
-          name="org.bwgz.eclipse.icon.archive.feature.group"/>
-      <requirement
           name="org.eclipse.mylyn.github.feature.feature.group"/>
       <requirement
           name="org.eclipse.m2e.feature.feature.group"/>
@@ -115,8 +113,6 @@
           url="http://andrei.gmxhome.de/eclipse/"/>
       <repository
           url="http://update.eclemma.org/"/>
-      <repository
-          url="http://download.bwgz.org/eclipse/org.bwgz.eclipse.icon.archive.update/site.xml"/>
       <repository
           url="http://plantuml.sourceforge.net/updatesitejuno"/>
       <repository
