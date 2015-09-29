@@ -19,47 +19,54 @@
     </detail>
   </annotation>
   <setupTask
-      xsi:type="setup:CompoundTask"
-      name="User Preferences">
-    <setupTask
-        xsi:type="setup:PreferenceTask"
-        key="/instance/org.eclipse.core.resources/encoding"
-        value="UTF-8"/>
-    <setupTask
-        xsi:type="setup:PreferenceTask"
-        key="/instance/org.eclipse.jsch.core/PRIVATEKEY"
-        value="eclipse.ppk,github.ppk"/>
-    <setupTask
-        xsi:type="setup:PreferenceTask"
-        key="/instance/org.eclipse.oomph.setup.ui/showToolBarContributions"
-        value="true"/>
-    <setupTask
-        xsi:type="setup:PreferenceTask"
-        key="/instance/org.eclipse.ui/SHOW_TEXT_ON_PERSPECTIVE_BAR"
-        value="false"/>
-    <setupTask
-        xsi:type="setup:PreferenceTask"
-        key="/instance/org.eclipse.ui.editors/lineNumberRuler"
-        value="true"/>
-    <setupTask
-        xsi:type="setup:PreferenceTask"
-        key="/instance/org.eclipse.ui.editors/spellingEnabled"
-        value="false"/>
-    <setupTask
-        xsi:type="setup:PreferenceTask"
-        key="/instance/org.eclipse.ui.editors/occurrenceIndicationColor"
-        value="0,255,0"/>
-    <setupTask
-        xsi:type="setup:PreferenceTask"
-        key="/instance/org.eclipse.ui.editors/writeOccurrenceIndicationColor"
-        value="255,0,128"/>
+      xsi:type="setup.p2:P2Task">
+    <requirement
+        name="org.eclipse.oomph.setup.feature.group"/>
+    <repository
+        url="${oomph.update.url}"/>
   </setupTask>
   <version name="latest"
       label="Latest (Mars)"
       requiredJavaVersion="1.7">
     <setupTask
+        xsi:type="setup:CompoundTask"
+        name="Preferences">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.oomph.setup.ui/showToolBarContributions"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ui.editors/lineNumberRuler"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ui.editors/occurrenceIndicationColor"
+          value="0,255,0"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ui.editors/writeOccurrenceIndicationColor"
+          value="255,0,128"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.core.resources/refresh.enabled"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.ui/SHOW_TEXT_ON_PERSPECTIVE_BAR"
+          value="false"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.core.resources/encoding"
+          value="UTF-8"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.typefilter.enabled"
+          value="java.awt.*;"/>
+    </setupTask>
+    <setupTask
         xsi:type="setup.p2:P2Task"
-        label="sle's Eclipse Setup (Mars)">
+        label="Scout 5.2 Eclipse Setup (Mars)">
       <requirement
           name="org.eclipse.platform.ide"
           versionRange="[4.5.0,4.6.0)"/>
@@ -84,6 +91,11 @@
       <repository
           url="http://andrei.gmxhome.de/eclipse/"/>
     </setupTask>
+  <setupTask
+      xsi:type="setup:EclipseIniTask"
+      option="-Xmx"
+      value="2048m"
+      vm="true"/>
   </version>
   <description>Package suited for development of &lt;a href=&quot;http://www.eclipse.org/scout&quot;>Scout 5.2&lt;/a>.</description>
 </setup:Product>
