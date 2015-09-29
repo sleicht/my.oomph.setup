@@ -5,8 +5,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
     xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
-    name="my.mars.eclipse.mysetup.package"
-    label="sle's Eclipse Mars Setup">
+    name="scout.5_2.mars.eclipse.mysetup.package"
+    label="Scout 5.2 Eclipse Mars Setup">
   <annotation
       source="http://www.eclipse.org/oomph/setup/BrandingInfo">
     <detail
@@ -15,7 +15,7 @@
     </detail>
     <detail
         key="imageURI">
-      <value>https://de.gravatar.com/userimage/19907468/cf56a6321f085640664031c37afdede6.png</value>
+      <value>https://wiki.eclipse.org/images/e/eb/ScoutIconLarge.gif</value>
     </detail>
   </annotation>
   <setupTask
@@ -85,5 +85,5 @@
           url="http://andrei.gmxhome.de/eclipse/"/>
     </setupTask>
   </version>
-  <description>Package suited for development of &lt;a href=&quot;http://www.eclipse.org/scout&quot;>Scout&lt;/a>.</description>
+  <description>Package suited for development of &lt;a href=&quot;http://www.eclipse.org/scout&quot;>Scout 5.2&lt;/a>.</description>
 </setup:Product>
